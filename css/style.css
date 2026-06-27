@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Work Sans";
+  src: url("../assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+:root {
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  padding: 125px 20px;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 225px;
+  background: url("../assets/images/background-pattern-mobile.svg") no-repeat top/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background-color: hsl(0, 100%, 100%);
+  border-radius: 15px;
+  box-shadow: 0 20px 20px hsla(292, 16%, 49%, .2);
+  padding: 50px 40px 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-bottom: 35px;
+}
+
+.header img {}
+
+.title {
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: hsl(292, 42%, 14%);
+}
+
+.faq {}
+
+.faq__item {
+  margin-bottom: 50px;
+}
+
+.button {
+  width: 100%;
+  color: hsl(292, 42%, 14%);
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 5px;
+  margin-bottom: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  color: hsl(292, 16%, 49%);
+}
+
+.button span {}
+
+.button img {}
+
+.text {
+  color: hsl(292, 16%, 49%);
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  body::before {
+    height: 315px;
+    background: url("../assets/images/background-pattern-desktop.svg") no-repeat top/cover;
+  }
+}
