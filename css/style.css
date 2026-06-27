@@ -63,7 +63,13 @@ body::before {
 .faq {}
 
 .faq__item {
-  margin-bottom: 50px;
+  padding: 25px 0;
+  border-top: 1px solid hsla(292, 16%, 49%, .2);
+}
+
+.faq__item:first-of-type {
+  padding-top: 0;
+  border-top: none;
 }
 
 .button {
@@ -77,8 +83,6 @@ body::before {
   align-items: center;
   justify-content: space-between;
   gap: 40px;
-  padding: 5px;
-  margin-bottom: 20px;
   text-align: left;
   cursor: pointer;
 }
@@ -95,6 +99,8 @@ body::before {
 .text {
   color: hsl(292, 16%, 49%);
   line-height: 1.5;
+  margin-top: 20px;
+  /* display: none; */
 }
 
 @media screen and (min-width: 650px) {
